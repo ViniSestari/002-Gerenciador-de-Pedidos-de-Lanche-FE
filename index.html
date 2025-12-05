@@ -4,44 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malvado Lanches na Baguete</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte estilosa -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <header class="cabecalho">
-            <h1 class="logo">Malvado Lanches na Baguete</h1>
-            <nav class="menu">
-                <a href="#">home</a>
-                <a href="fazer.pedido.html">Fazer Pedido</a>
-                <a href="listar.pedidos.html">Meus Pedidos</a>
-                <a href="buscar.pedido.html">Buscar Pedidos</a>
-            </nav>
-        </header>
-        <div class="malvado">
-             <h2>A melhor BAGUETE<br>da cidade!</h2>
-             <img src="img/malvado-baguete.png" alt="malvado baguete">
-       </div>
-    <div class="lista-produtos">
-        <div class="um-produto">
-            <h3>X-Bacon</h3>
-            <strong>R$29,90</strong>
-            <img src="img/x-bacon.png" alt="x-bacon">
-        </div>
-        <div class="um-produto">
-            <h3>X-Tudo</h3>
-            <strong>R$35,50</strong>
-            <img src="img/x-tudo.png" alt="x-tudo">
-       </div>
-       <div class="um-produto">
-           <h3>X-Verificada</h3>
-           <strong>R$40,00</strong>
-           <img src="img/x-verificada.png" alt="x-verificada">
-       </div>
+
+<header class="cabecalho">
+    <h1 class="logo">🍔 Malvado Lanches</h1>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="fazer.pedido.html">Fazer Pedido</a>
+        <a href="listar.pedidos.html">Meus Pedidos</a>
+        <a href="buscar.pedido.html">Buscar Pedido</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-texto">
+        <h2>O melhor <span>SANDUBA</span> da cidade!</h2>
+        <p>Feita na chapa quente, com sabor malvado 😈🔥</p>
+        <a href="fazer.pedido.html" class="botao">Fazer pedido</a>
     </div>
-    <footer class="rodape">
-        <p>Malvado Lanches na Baguete - &copy; 2025</p>
-    </footer>
-</main>
+</section>
+
+<section class="produtos">
+
+    <h2 class="titulo-sessao">🍔 Nossos Lanches</h2>
+
+    <div class="lista-produtos">
+
+        <div class="um-produto">
+            <img src="img/x-bacon.png" alt="X-Bacon">
+            <h3>X-Bacon</h3>
+            <p>Pão, hambúrguer, bacon crocante e queijo</p>
+            <strong>R$ 29,90</strong>
+            <button>Adicionar</button>
+        </div>
+
+        <div class="um-produto">
+            <img src="img/x-tudo.png" alt="X-Tudo">
+            <h3>X-Tudo</h3>
+            <p>Hambúrguer, ovo, presunto, queijo, salada</p>
+            <strong>R$ 35,50</strong>
+            <button>Adicionar</button>
+        </div>
+
+        <div class="um-produto">
+            <img src="img/x-verificada.png" alt="X-verificada">
+            <h3>X-Verificada 😈</h3>
+            <p>O lanche mais pesado da casa</p>
+            <strong>R$ 40,00</strong>
+            <button>Adicionar</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="rodape">
+    <p>Malvado Lanches na Baguete © 2025 - Todos os direitos reservados</p>
+</footer>
+
 <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fazer Pedido | Malvado Lanches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <h1 class="logo">🍔 Malvado Lanches</h1>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="listar.pedidos.html">Meus Pedidos</a>
+  </nav>
+</header>
+
+<section class="produtos">
+  <h2 class="titulo-sessao">📝 Monte seu pedido</h2>
+
+  <div class="lista-produtos">
+
+    <div class="um-produto">
+      <img src="img/x-bacon.png">
+      <h3>X-Bacon</h3>
+      <strong>R$ 29,90</strong>
+      <button onclick="adicionar('X-Bacon', 29.90)">Adicionar</button>
+    </div>
+
+    <div class="um-produto">
+      <img src="img/x-tudo.png">
+      <h3>X-Tudo</h3>
+      <strong>R$ 35,50</strong>
+      <button onclick="adicionar('X-Tudo', 35.50)">Adicionar</button>
+    </div>
+
+    <div class="um-produto">
+      <img src="img/x-verificada.png">
+      <h3>X-Verificada</h3>
+      <strong>R$ 40,00</strong>
+      <button onclick="adicionar('X-Verificada', 40.00)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="produtos">
+  <h2 class="titulo-sessao">🛒 Carrinho</h2>
+
+  <ul id="carrinho" style="list-style:none;"></ul>
+  <h3 id="total">Total: R$ 0,00</h3>
+
+  <br>
+
+  <input class="campo" type="text" id="nomeCliente" placeholder="Seu nome">
+  <br><br>
+  <button class="botao" onclick="finalizarPedido()">Finalizar Pedido</button>
+</section>
+
+<footer class="rodape">
+  <p>Malvado Lanches na Baguete © 2025</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
